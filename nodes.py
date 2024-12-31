@@ -34,7 +34,7 @@ class ExitComfyUINode:
 
 
     def exit_comfyui(self, any, wait_seconds):
-        # 別スレッドで実行
+        # 別スレッドで実行
         threading.Thread(target=self.sleep_and_exit, args=(wait_seconds,)).start()
         return (0, )
 
