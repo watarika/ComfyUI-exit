@@ -1,6 +1,7 @@
 import time
 import os
 import threading
+import requests
 
 class ComfyAnyType(str):
     def __ne__(self, __value: object) -> bool:
@@ -38,10 +39,31 @@ class ExitComfyUINode:
         return (0, )
 
 
+class FetchApiNode:
+    @classmethod
+    def INPUT_TYPES(s):
+        return {
+            "required": {
+                "any": (ComfyAnyType("*"), {}),
+                "url": ("STRING",),
+            }
+        }
+
+    RETURN_TYPES = ("STRING",)
+    OUTPUT_IS_LIST = (True,)
+    FUNCTION = "execute"
+    CATEGORY = "api"
+
+    def execute(self, any, url):
+        return (requests.get(url).content, )    
+
+
 NODE_CLASS_MAPPINGS = {
-    "ExitComfyUI": ExitComfyUINode
+    "ExitComfyUI": ExitComfyUINode,
+    "FetchApi": FetchApiNode,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "ExitComfyUI": "Exit ComfyUI",
+    "FetchApi": "Fetch API",
 }
