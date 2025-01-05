@@ -1,0 +1,14 @@
+[project]
+name = "exit"
+description = "Custom node to exit ComfyUI. Exit ComfyUI after a specified number of seconds."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/watarika/ComfyUI-exit"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "watarika"
+DisplayName = "ComfyUI-exit"
+Icon = ""
