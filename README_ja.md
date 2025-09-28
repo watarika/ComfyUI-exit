@@ -4,7 +4,7 @@
 
 ComfyUIを終了させるカスタムノードです。
 
-## Shutdown when Last Batch
+## Exit when Last Batch
 
 ComfyUI の実行がすべて終わったら自動で ComfyUI を終了するカスタムノードです。\
 「残バッチ数が 0」に見えたタイミングで即終了せず、**一定時間後に再確認（複数回）** してから終了します。
@@ -54,7 +54,7 @@ Google Colabのランタイムを接続解除して削除するのはNotebook側
 ## 変更履歴
 
 - V1.2.0 (2025-09-29)
-  - `Shutdown when Last Batch` ノードを追加
+  - `Exit when Last Batch` ノードを追加
 - V1.1.0 (2024-12-31)
   - `Fetch API` ノードを追加
 - v1.0.0 (2024-12-13)

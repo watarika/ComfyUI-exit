@@ -4,7 +4,7 @@
 
 Custom node to exit ComfyUI.
 
-## Shutdown when Last Batch
+## Exit when Last Batch
 This custom node automatically terminates ComfyUI once all its executions have finished.\
 It does not immediately shut down when it appears that “the number of remaining batches is 0”. Instead, it **rechecks multiple times after a set delay** before terminating.
 
@@ -49,7 +49,7 @@ Sends a request to the specified URL.
 
 ## Change Log
 - V1.2.0 (September 29, 2025)
-  - Added `Shutdown when Last Batch` node
+  - Added `Exit when Last Batch` node
 - V1.1.0 (December 31, 2024)
   - Added `Fetch API` node
 - v1.0.0 (December 13, 2024)
