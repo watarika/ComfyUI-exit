@@ -215,5 +215,5 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "ExitComfyUI": "Exit ComfyUI",
     "FetchApi": "Fetch API",
-    "ExitWhenLastBatchConfirm": "Exit when Last Batch (Confirm)",
+    "ExitWhenLastBatchConfirm": "Exit when Last Batch",
 }

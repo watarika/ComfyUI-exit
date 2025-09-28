@@ -1,7 +1,7 @@
 [project]
 name = "exit"
 description = "Custom node to exit ComfyUI. Exit ComfyUI after a specified number of seconds."
-version = "1.0.0"
+version = "1.2.0"
 license = {file = "LICENSE"}
 
 [project.urls]
