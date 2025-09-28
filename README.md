@@ -17,6 +17,7 @@ It does not immediately shut down when it appears that “the number of remainin
 * Utilizes ComfyUI's **HTTP `/queue` API** (operates without external extensions)
 
 ### Parameters
+* `any`: Dummy input for the terminal node. Connect it to the output of the final node.
 * `confirm_delay_sec` (int): **After the initial “0 remaining” determination**, the wait time (in seconds) before starting rechecks. Allows time for saving or post-processing.
 * `confirm_attempts` (int): **Number of retry attempts**. The process ends when all attempts show consecutive 0s.
 * `confirm_interval_sec` (int): **Interval between each retry attempt**.
