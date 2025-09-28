@@ -8,6 +8,8 @@ Custom node to exit ComfyUI.
 This custom node automatically terminates ComfyUI once all its executions have finished.\
 It does not immediately shut down when it appears that “the number of remaining batches is 0”. Instead, it **rechecks multiple times after a set delay** before terminating.
 
+![image](https://github.com/user-attachments/assets/2e105f4c-08f3-462c-8e5e-290870677c48)
+
 ### Features
 * Simply place it at the end of the graph to **automatically terminate after all batches complete**
 * **With rechecks**: After `confirm_delay_sec` seconds, it rechecks `/queue` `confirm_attempts` times at `confirm_interval_sec`-second intervals. If it's 0 every time, it exits.
